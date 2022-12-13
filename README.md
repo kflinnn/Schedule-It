@@ -9,15 +9,19 @@ When the user opens the planner the current day is displayed at the top of the c
 ## Examples
 
 Save Button function to save to local storage, use of jQuery:
+
 ![Screen Shot 2022-12-12 at 9 47 22 PM](https://user-images.githubusercontent.com/116764540/207214004-08071a65-d0d4-45e4-9c44-af5960d14fd5.png)
 
 Bootstrap:
+
 ![Screen Shot 2022-12-12 at 9 48 47 PM](https://user-images.githubusercontent.com/116764540/207214179-6e2c10be-af93-4ec2-851a-ef97a0c2786e.png)
 
 Use of day.js to get the current date displayed:
+
 ![Screen Shot 2022-12-12 at 9 49 58 PM](https://user-images.githubusercontent.com/116764540/207214325-2e612e71-e799-4685-b14a-256e2d8c92d7.png)
 
 Planner opened with current date displayed:
+
 ![Screen Shot 2022-12-12 at 9 44 38 PM](https://user-images.githubusercontent.com/116764540/207213720-c49c47ac-bdc9-4ab6-be1b-5f80807f7392.png)
 
 
