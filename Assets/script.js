@@ -1,4 +1,7 @@
 var dateDisplayEl = $('#currentDay');
+var presentTask = $(".col-2 col-md-1 hour text-center py-3")
+var pastTask = $()
+var futureTask = 
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -22,6 +25,7 @@ $(function () {
 //Second Save Button
   var saveButtonTen = $("#hour-10, button");
   saveButtonTen.on("click", function(){
+    console.log(saveButtonTen);
     var enteredHourTen = document.querySelector("#hour-10-text").value;
     localStorage.setItem("hour-10", enteredHourTen);
   })
@@ -81,6 +85,15 @@ saveButtonFive.on("click", function(){
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
+  // for (var i = 0; i < tasks.length; i += 1) {
+  //   var task = tasks[i];
+  //   var taskTime = dayjs(tasks.time);
+  // }
+  // console.log(taskTime);
+  // console.log(task);
+    //get current time
+    var currentTime = dayjs().format("hh, mm, ss, A"); 
+    console.log(currentTime);
 
   
   //
@@ -89,15 +102,15 @@ saveButtonFive.on("click", function(){
   // attribute of each time-block be used to do this?
   //
 
-  function readTasksFromStorage() {
-    var tasks = localStorage.getItem("tasks");
-    if (tasks) {
-      tasks = JSON.parse(tasks);
-    } else {
-      tasks = [];
-    }
-    return tasks;
-  }
+  // function readTasksFromStorage() {
+  //   var tasks = localStorage.getItem("tasks");
+  //   if (tasks) {
+  //     tasks = JSON.parse(tasks);
+  //   } else {
+  //     tasks = [];
+  //   }
+  //   return tasks;
+  // }
 
 
   // TODO: Add code to display the current date in the header of the page.
